@@ -1,0 +1,100 @@
+.products{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 50px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.title-wrap{
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    width:100%;
+}
+
+.product-image img{
+  height: 320px;
+  width: 320px;
+}
+
+.products  {
+    /* Created with https://www.css-gradient.com */
+    text-align: center;
+    align-items: center;
+    padding: 20px 0;
+    font-size: 20px;
+    border-radius: 15px;
+  }
+  .product-info{
+    padding: 20px;
+    line-height: 1.6;
+  }
+  .product-card{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding: 20px;
+    width:400px;
+    border-radius: 10px;
+  } 
+
+ 
+  @media screen and (max-width:1300px){
+      .product-image img {
+        height: 200px;
+        width: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .products{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+        padding: 10px;
+    }
+    .product-card{
+      box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+      padding: 20px;
+      width:300px;
+      border-radius: 10px;
+    } 
+  }
+
+  @media screen and (max-width:600px){
+    .title-wrap{
+      display: block;
+      margin: auto;
+      text-align: center;
+      width:100%;
+    }
+    .soplogo{
+      width:300px;
+     }
+    .products{
+        display: block;
+        width: 310px;
+        margin: auto;
+    }
+    .product-card{
+      margin-top: 25px;
+    }
+    
+      .product-info {
+        padding-top: 15px;
+        margin: auto;
+        text-align: center;
+      }
+      .product-image img {
+        height: 250px;
+        width: 250px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .product-card{
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        padding: 20px;
+        width:290px;
+        border-radius: 10px;
+      } 
+}

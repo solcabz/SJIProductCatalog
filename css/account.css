@@ -1,0 +1,58 @@
+.userForm{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width: 25%;
+    align-items: center;
+	margin: 70px auto;
+	background: white;
+	padding: 10px;
+	border-radius: 3px;
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+.reset  {
+    color: #333;
+    background: #d9c5ce;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transform: skew(-21deg);
+   }
+   
+   span {
+    display: inline-block;
+    transform: skew(21deg);
+  }
+
+  .reset::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: #333;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+  
+  .reset:hover {
+    color: #d9c5ce;
+  }
+  
+  .reset:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+
+  .userDetails{
+    display:flex;
+    flex-direction: column;
+    gap: 15px; 
+    font-size: 25px;
+  }

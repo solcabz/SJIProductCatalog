@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Della+Respira&display=swap');
+a{
+	text-decoration: none;
+}
+form {
+	width: 25%;
+	margin: 70px auto;
+	background: white;
+	padding: 10px;
+	border-radius: 3px;
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+h2.form-title {
+    font-family: 'Della Respira', serif;
+	text-align: center;
+}
+/* input {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 8px;
+} */
+form .form-group {
+	margin: 10px auto;
+	position: relative;
+}
+form button {
+	width: 100%;
+	border: none;
+	color: white;
+	background: #caaab0;
+	padding: 15px;
+	border-radius: 5px;
+}
+.msg {
+	margin: 5px auto;
+	border-radius: 5px;
+	border: 1px solid red;
+	background: pink;
+	text-align: left;
+	color: brown;
+	padding: 10px;
+}
+
+.input {
+ border: solid 1.5px #9e9e9e;
+ border-radius: .5rem;
+ background: none;
+ padding: 1rem;
+ width: 100%;
+ font-size: 1rem;
+ color: #333;
+}
+
+.user-label {
+ left: 15px;
+ color: #333;
+ pointer-events: none;
+}
+
+.input:focus, input:valid {
+ outline: none;
+ border: 1.5px solid #333;
+}
+
+.input:focus ~ label, input:valid ~ label {
+ background-color: #e8e8e8;
+ padding: 0 .2em;
+ color: #333;
+}
+.close {
+    color: grey;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration:none
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .soplogo{
+    width: 100%;
+  }

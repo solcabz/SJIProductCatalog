@@ -1,0 +1,126 @@
+body{
+  background: white;
+}
+.title-wrap{
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+  width:100%;
+  }
+
+article
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+table {
+    border: 1px solid #333;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    table-layout: fixed;
+  }
+  
+  table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+  
+  table tr {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: .35em;
+  }
+  
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+  }
+  
+  table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  
+  @media screen and (max-width: 873px) {
+    .title-wrap{
+      display: inline-block;
+      margin: auto;
+      text-align: center;
+      width:100%;
+    }
+    .soplogo{
+      width:300px;
+    }
+
+    table {
+      border: 0;
+    }
+  
+    table caption {
+      font-size: 1.3em;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid #333;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: center;
+    }
+    
+    table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }
+  
+  
+.Icons {
+  font-size: 1.8em;
+  color: white;
+  align-items: center;
+  padding: 0px 25px;
+  background: rgb(146, 116, 196);
+  border-radius: 35px;
+}
+.uploadWrap{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 10px;
+}
+
